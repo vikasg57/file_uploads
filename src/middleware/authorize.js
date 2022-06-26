@@ -38,11 +38,6 @@ module.exports = async (req, res, next) => {
     return res.status(500).send(er.message);
   }
 
-  req.user = user.user;
-
-  console.log(req.user);
-
-  
-
+  req.user = user.user; 
   return next();
 };
