@@ -1,0 +1,39 @@
+  #main {
+        width: 20%;
+        text-align: center;
+        margin: auto;
+        margin-top: 10%;
+       
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    }
+
+    #form {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        flex-shrink: 0;
+        width: 70%;
+    }
+
+    #main input {
+        margin: 10px;
+        border-radius: 10px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #main input::placeholder  {
+        text-align: center;
+
+
+    }
+
+    #sub{
+        background-color: black;
+        color: white;
+        cursor: pointer;
+
+    }
+
+    

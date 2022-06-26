@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/home.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="welcome_user"></h1>
+    <h1>upload your image</h1>
+    <div>
+      <a href="login.html"><h3>log in</h3></a>
+      <a href="signup.html"> <h3>sign up</h3></a>
+      <a href="login.html"><h3 onclick="logout()" >log out</h3></a>
+    </div>
+
+    <div id="main">
+      <form action="" enctype="multipart/form-data">
+        <input type="file" id="myfile" name="filename" class="sub" />
+
+        <input type="submit" class="sub" />
+      </form>
+    </div>
+
+    <label for="key">Enter your secret key</label>
+    <input type="text" id="key" name="key" />
+    <button id="getdata" class="sub">GET</button>
+
+    <div id="imgdiv"></div>
+  </body>
+</html>
+<script src="./scripts/home.js"></script>
+
+
