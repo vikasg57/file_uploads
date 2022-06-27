@@ -18,12 +18,12 @@ router.post("/docs", authorize, upload.single("file"), async (req, res) => {
         data: fs.readFileSync(
           path.resolve("." + "/uploads/" + req.file.filename)
         ),
-        ContentType: "image/png",
+        ContentType: ["image/png","image/jpeg", "image/jpg"],
       },
     };
-    console.log(path.resolve("." + "/uploads/" + req.file.filename));
     const img = await Image.create(image);
-    return res.send({ key: img.key });
+    console.log({"key":img.key})
+    return res.send(image);
   } catch (er) {
     return res.status(500).send(er.message);
   }
