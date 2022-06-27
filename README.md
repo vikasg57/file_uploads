@@ -30,3 +30,8 @@ Start thr backend server with following command.
 ```
 npm start
 ```
+- ### step 5
+Create uploads folder in route directory.
+```
+mkdir uploads
+```
